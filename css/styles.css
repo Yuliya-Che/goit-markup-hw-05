@@ -128,7 +128,11 @@
 .services-item:nth-child(3n) {
   margin-right: 0;
 }
-яяяя
+/* Добавляет относительное позиционирование для наименования услуг */
+.services-thumb {
+  position: relative;
+}
+
 /*Стилизирует h3-заголовки секции с конкретизацией услуг студии*/
 .services-detalization {
   margin-top: 0;
@@ -143,6 +147,13 @@
   text-transform: uppercase;
   color: var(--total-white);
   background-color: rgba(47, 48, 58, 0.8);
+
+  /* Добавляет абсолютное позиционирование для наименования услуг */
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  left: 0;
 }
 /*Добавляет фон секции с командой студии*/
 .team {
