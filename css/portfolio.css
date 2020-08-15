@@ -31,6 +31,10 @@
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Добавляет ховер-эффект кнопкам в Портфолио */
 .btn:hover,
@@ -61,6 +65,8 @@
 .projects-item {
   max-width: 370px;
   border: 1px solid #eeeeee;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-item:not(:nth-child(3n)) {
   margin-right: 30px;
