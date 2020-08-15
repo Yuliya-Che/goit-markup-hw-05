@@ -73,7 +73,6 @@ address {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .contact-list {
   margin-left: auto;
@@ -131,6 +130,21 @@ address {
   padding-bottom: 32px;
 
   color: var(--accent-color);
+}
+
+.menu-list > li {
+  position: relative;
+}
+.menu-list .menu-link.current::after {
+  position: absolute;
+  content: "";
+  display: block;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 /*Присваивает шрифт ссылкам контактов в шапке и базовые свойства шрифта*/
