@@ -92,7 +92,7 @@
   letter-spacing: 0.03em;
   color: var(--total-white);
 
-  transform: translatey(100%);
+  transform: translatey(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
