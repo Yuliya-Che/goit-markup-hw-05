@@ -288,29 +288,51 @@
 /* Работа с секцией постоянных клиентов */
 .customers-list {
   display: flex;
+  align-items: center;
 }
+
 .customers-item {
   width: calc((100%-90px) / 6);
   margin-right: 30px;
-}
-.customers-item:last-child {
-  margin-right: 0px;
-}
-.customer-icon {
-  border-radius: 4px;
-  fill: var(--svg-color);
+  height: 90px;
   border: 1px solid var(--svg-color);
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.customers-item:last-child {
+  margin-right: 0px;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border-color: var(--accent-color);
+}
+
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+  fill: var(--svg-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer-icon {
+  fill: var(--svg-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Добавляет эффекты ховера и фокуса на иконки клиентов */
 .customer-icon:hover,
 .customer-icon:focus {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
 }
 .customer-icon:active {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
 }
